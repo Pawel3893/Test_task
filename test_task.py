@@ -15,8 +15,8 @@ vspace = 2
 hspace = 2
 
 (h, w) = Image.open(images[0]).size
-gavno = int((vsize*(w+vspace)))
-im = Image.new('RGB', ((hsize*(h+hspace)), gavno))
+size_x = int((vsize*(w+vspace)))
+im = Image.new('RGB', ((hsize*(h+hspace)), size_x))
 
 for i, filename in enumerate(images):
     imin = Image.open(filename).convert('RGB')
